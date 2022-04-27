@@ -8,10 +8,10 @@ Player::Player() {
     this->money = 0;
     this->name = "";
 }
-Player::Player(Game& game, string name){
+Player::Player(Game const& game, string const& name){
+    this->money = 0;
     this->name = name;
     this->game = game;
-    //this->game.addPlayer(*this);
 }
 void Player::income() {
     this->money++;
@@ -19,13 +19,12 @@ void Player::income() {
 void Player::foreign_aid(){
     this->money+=2;
 }
-void Player::coup(Player player){
-    //this->game.coupPlayer(player);
+void Player::coup(Player const& player){
 }
 string Player::role(){
     return "Player";
 }
-int Player::coins(){
+int Player::coins() const{
     return this->money;
 }
 string Player::getName() {

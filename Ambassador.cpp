@@ -4,8 +4,8 @@
 #include "Ambassador.hpp"
 using namespace coup;
 
-Ambassador::Ambassador(Game game, string name) {}
-void Ambassador::transfer(Player took, Player give) {}
+Ambassador::Ambassador(Game const& game, string const& name) {}
+void Ambassador::transfer(Player const& took, Player const& give) {}
 string Ambassador::role() {
     return "Ambassador";
 }

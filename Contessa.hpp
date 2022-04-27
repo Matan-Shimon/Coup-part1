@@ -2,8 +2,8 @@
 namespace coup {
     class Contessa:public Player{
     public:
-        Contessa(Game game, string name);
-        void block(Player player);
+        Contessa(Game const& game, string const& name);
+        void block(Player const& player);
         virtual string role();
     };
 }

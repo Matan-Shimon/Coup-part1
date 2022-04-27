@@ -2,9 +2,9 @@
 namespace coup {
     class Captain:public Player{
     public:
-        Captain(Game game, string name);
-        void steal(Player player);
-        void block(Player player);
+        Captain(Game const& game, string const& name);
+        void steal(Player const& player);
+        void block(Player const& player);
         virtual string role();
     };
 }

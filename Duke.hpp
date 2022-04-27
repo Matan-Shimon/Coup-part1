@@ -2,9 +2,9 @@
 namespace coup {
     class Duke:public Player {
     public:
-        Duke(Game& game, string name);
+        Duke(Game const& game, string const& name);
         void tax();
-        void block(Player player);
+        void block(Player const& player);
         virtual string role();
     };
 }

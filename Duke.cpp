@@ -4,14 +4,13 @@
 #include "Duke.hpp"
 using namespace coup;
 
-Duke::Duke(Game& game, string name) {
+Duke::Duke(Game const& game, string const& name) {
     this->name = name;
-    //game.addPlayer(*this);
 }
 void Duke::tax(){
 
 }
-void Duke::block(Player player){}
+void Duke::block(Player const& player){}
 string Duke::role() {
     return "Duke";
 }

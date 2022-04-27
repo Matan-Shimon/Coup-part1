@@ -4,9 +4,9 @@
 #include "Captain.hpp"
 using namespace coup;
 
-Captain::Captain(Game game, string name){}
-void Captain::steal(Player player){}
-void Captain::block(Player player){}
+Captain::Captain(Game const& game, string const& name){}
+void Captain::steal(Player const& player){}
+void Captain::block(Player const& player){}
 string Captain::role() {
     return "Captain";
 }

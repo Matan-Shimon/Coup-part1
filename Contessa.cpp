@@ -4,8 +4,8 @@
 #include "Contessa.hpp"
 using namespace coup;
 
-Contessa::Contessa(Game game, string name){}
-void Contessa::block(Player player){}
+Contessa::Contessa(Game const& game, string const& name){}
+void Contessa::block(Player const& player){}
 string Contessa::role() {
     return "Contessa";
 }

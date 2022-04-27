@@ -4,8 +4,8 @@
 #include "Assassin.hpp"
 using namespace coup;
 
-Assassin::Assassin(Game game, string name){}
-void Assassin::coup(Player player){}
+Assassin::Assassin(Game const& game, string const& name){}
+void Assassin::coup(Player const& player){}
 string Assassin::role() {
     return "Assassin";
 }

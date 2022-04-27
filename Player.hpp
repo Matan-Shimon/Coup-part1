@@ -10,12 +10,12 @@ namespace coup{
         string name;
     public:
         Player();
-        Player(Game& game, string name);
+        Player(Game const& game, string const& name);
         void income();
         void foreign_aid();
-        void coup(Player player);
-        string role();
-        int coins();
+        void coup(Player const& player);
+        static string role();
+        int coins() const;
         string getName();
     };
 }

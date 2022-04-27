@@ -2,8 +2,8 @@
 namespace coup {
     class Ambassador:public Player{
     public:
-        Ambassador(Game game, string name);
-        void transfer(Player took, Player give);
+        Ambassador(Game const& game, string const& name);
+        void transfer(Player const& took, Player const& give);
         virtual string role();
     };
 }
